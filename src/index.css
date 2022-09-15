@@ -7,6 +7,10 @@
     font-family: 'Blender Pro', sans-serif;
 }
 
+body {
+    background: #F3F3F3;
+}
+
 button {
     cursor: pointer;
 }
