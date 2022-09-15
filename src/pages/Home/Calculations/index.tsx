@@ -14,8 +14,8 @@ const Calculations = () => {
                 </span>
             </h2>
             <div className="calculations__list">
-                <CalculationsBox priority={"#EF4030"}/>
-                <CalculationsBox priority={"#F58420"}/>
+                <CalculationsBox status={false} priority={"#EF4030"}/>
+                <CalculationsBox status={true} priority={"#F58420"}/>
             </div>
             <div className="calculations__resume">
                 <DailyResume/>
