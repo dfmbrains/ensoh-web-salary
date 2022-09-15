@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.862" height="49.788" viewBox="0 0 54.862 49.788">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_477"  d="M694.215-711.746H661.909a4.968,4.968,0,0,1-4.969-4.969v-28.576a4.969,4.969,0,0,1,4.969-4.969h32.305a4.969,4.969,0,0,1,4.969,4.969v28.576A4.968,4.968,0,0,1,694.215-711.746Z" transform="translate(-656.94 750.261)" fill="none" stroke="#000" stroke-width="1.255" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Group_35" transform="translate(0.628 0)">
+    <g id="ClipView_5" transform="translate(11.363 4.972)">
+      <path id="Path_475"  d="M694.215-711.746H661.909a4.968,4.968,0,0,1-4.969-4.969v-28.576a4.969,4.969,0,0,1,4.969-4.969h32.305a4.969,4.969,0,0,1,4.969,4.969v28.576A4.968,4.968,0,0,1,694.215-711.746Z" transform="translate(-656.94 750.261)" fill="#fff" stroke="#adbcd0" stroke-width="1.255" fill-rule="evenodd"/>
+      <g id="Group_33"  clip-path="url(#clip-path)">
+        <path id="Path_476"  d="M657.7-740.321h41.633l-1.279-8.121-3.844-1.819H663.2l-3.023.308-2.559,2.147-.683,2.515Z" transform="translate(-656.94 750.261)" fill="#d5dfed" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <path id="Path_478"  d="M656.825-742.806h42.551" transform="translate(-645.616 757.718)" fill="none" stroke="#adbcd0" stroke-width="1.255" fill-rule="evenodd"/>
+    <path id="Path_479"  d="M664.4-753.99v8.7" transform="translate(-643.092 753.99)" fill="#fff" stroke="#adbcd0" stroke-width="1.255" fill-rule="evenodd"/>
+    <path id="Path_480"  d="M681.168-753.99v8.7" transform="translate(-637.501 753.99)" fill="#fff" stroke="#adbcd0" stroke-width="1.255" fill-rule="evenodd"/>
+    <path id="Path_481"  d="M670.841-722.724a11.21,11.21,0,0,1-11.213,11.209,11.208,11.208,0,0,1-11.209-11.209,11.21,11.21,0,0,1,11.209-11.212A11.213,11.213,0,0,1,670.841-722.724Z" transform="translate(-648.418 760.675)" fill="#d5dfed" stroke="#adbcd0" stroke-width="1.255" fill-rule="evenodd"/>
+    <path id="Path_482"  d="M656.825-729.979v11.871" transform="translate(-645.616 761.994)" fill="none" stroke="#fff" stroke-width="2.25" fill-rule="evenodd"/>
+    <path id="Path_483"  d="M664.246-725.527H652.374" transform="translate(-647.099 763.478)" fill="none" stroke="#fff" stroke-width="2.25" fill-rule="evenodd"/>
+  </g>
+</svg>

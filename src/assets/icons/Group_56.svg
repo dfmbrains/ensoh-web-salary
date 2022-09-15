@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.252" height="44.252" viewBox="0 0 44.252 44.252">
+  <g id="Group_56" transform="translate(0 0)">
+    <circle id="Ellipse_15"  cx="15.653" cy="15.653" r="15.653" transform="matrix(-0.73, -0.684, 0.684, -0.73, 22.839, 44.252)" fill="#fff"/>
+    <g id="Group_57" transform="translate(14.743 13.678)">
+      <path id="Path_560"  d="M990.857-730.432l-8.494,2.544-.469,3.589,11.547.236-.164-2.744-1.627-2.9Z" transform="translate(-980.615 740.917)" fill="#d5dfed" fill-rule="evenodd"/>
+      <g id="Group_58">
+        <path id="Path_561"  d="M980.935-738.3H995" transform="translate(-980.935 738.296)" fill="none" stroke="#adbcd0" stroke-width="1.125" fill-rule="evenodd"/>
+        <path id="Path_562"  d="M980.935-725.832H995" transform="translate(-980.935 742.451)" fill="none" stroke="#adbcd0" stroke-width="1.125" fill-rule="evenodd"/>
+        <path id="Path_563"  d="M981.894-721.677v-1.259c0-4.551,4.473-5.4,4.473-7.051s-4.473-2.5-4.473-7.051V-738.3" transform="translate(-980.615 738.296)" fill="none" stroke="#adbcd0" stroke-width="1.125" fill-rule="evenodd"/>
+        <path id="Path_564"  d="M991.642-721.677v-1.259c0-4.551-4.475-5.4-4.475-7.051s4.475-2.5,4.475-7.051V-738.3" transform="translate(-978.858 738.296)" fill="none" stroke="#adbcd0" stroke-width="1.125" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.93" height="74.93" viewBox="0 0 74.93 74.93">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_536"  d="M850.183-720.925H831.962a2.8,2.8,0,0,1-2.8-2.8v-16.117a2.8,2.8,0,0,1,2.8-2.8h18.221a2.8,2.8,0,0,1,2.8,2.8v16.117A2.8,2.8,0,0,1,850.183-720.925Z" transform="translate(-829.158 742.649)" fill="none" stroke="#000" stroke-width="1.26" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Group_50" transform="translate(2.12 2.12)">
+    <circle id="Ellipse_12"  cx="25.005" cy="25.005" r="25.005" transform="translate(36.484 70.689) rotate(-136.847)" fill="#e9eff5" stroke="#adbcd0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="ClipView_19" transform="translate(23.43 25.465)">
+      <path id="Path_534"  d="M850.183-720.925H831.962a2.8,2.8,0,0,1-2.8-2.8v-16.117a2.8,2.8,0,0,1,2.8-2.8h18.221a2.8,2.8,0,0,1,2.8,2.8v16.117A2.8,2.8,0,0,1,850.183-720.925Z" transform="translate(-829.158 742.649)" fill="#fff" stroke="#adbcd0" stroke-width="1.26" fill-rule="evenodd"/>
+      <g id="Group_57"  clip-path="url(#clip-path)">
+        <path id="Path_535"  d="M832.111-742.592l-1.572,1.073-.8,1.4.2,2.351.16.544h21.74l.1-2.344-.2-1.9-1.852-.9h-4.1Z" transform="translate(-828.964 742.668)" fill="#d5dfed" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <path id="Path_537"  d="M829.094-738.444h24" transform="translate(-805.749 769.515)" fill="none" stroke="#adbcd0" stroke-width="1.26" fill-rule="evenodd"/>
+    <path id="Path_538"  d="M833.363-744.752v4.907" transform="translate(-804.326 767.413)" fill="#fff" stroke="#adbcd0" stroke-width="1.26" fill-rule="evenodd"/>
+    <path id="Path_539"  d="M842.824-744.752v4.907" transform="translate(-801.173 767.413)" fill="#fff" stroke="#adbcd0" stroke-width="1.26" fill-rule="evenodd"/>
+  </g>
+</svg>
