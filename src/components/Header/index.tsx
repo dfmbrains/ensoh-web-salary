@@ -8,7 +8,6 @@ const Index = () => {
     return (
         <div className="header">
             <HeaderUp/>
-            <HeaderDown/>
         </div>
     );
 };

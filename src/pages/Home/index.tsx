@@ -2,17 +2,21 @@ import React from 'react';
 import './home.scss';
 import Calculations from "./Calculations";
 import Calendar from "./Calendar";
+import HeaderDown from "../../components/Header/HeaderDown/HeaderDown";
 
 const Home = () => {
     return (
-        <section className={"home"}>
-            <div className="container">
-                <div className="home__row">
-                    <Calculations/>
-                    <Calendar/>
+        <>
+            <HeaderDown/>
+            <section className={"home"}>
+                <div className="container">
+                    <div className="home__row">
+                        <Calculations/>
+                        <Calendar/>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 
