@@ -1,26 +1,17 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useState} from 'react';
 import Calendar from "react-calendar";
 import "./Calendar.scss"
 
 const CalendApp = () => {
 
-    useEffect(() => {
-        let par = document.querySelector(".react-calendar__month-view__weekdays");
-        par.querySelectorAll('abbr')
-            .forEach((item) => {
-                item.textContent = item.textContent.replace("׳", '')
-                item.textContent = item.textContent.slice(item.textContent.length - 1)
-            })
-    }, [])
-
     const [date, setDate] = useState(new Date());
+
     return (
         <div className='Calendar'>
             <div className='calendar-container'>
                 <Calendar locale="iw-IW" calendarType='Hebrew' onChange={setDate} value={date}/>
             </div>
-
             <div className="tips">
                 <div className="tip">
                     <span>יום עבודה</span>
