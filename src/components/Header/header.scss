@@ -1,0 +1,12 @@
+.header__up{
+  background: #0072BC;
+  padding: 7px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_links{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+  }
+}
