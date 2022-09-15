@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useState} from 'react';
 import Calendar from "react-calendar";
 import "./Calendar.scss"
@@ -6,6 +6,15 @@ import "./Calendar.scss"
 const CalendApp = () => {
 
     const [date, setDate] = useState(new Date());
+
+    const weekdays = ['ש','ו','ה','ד','ג','ב','א'];
+
+    useEffect(()=>{
+        document.querySelector('.react-calendar__month-view__weekdays')
+            .querySelectorAll('abbr').forEach((item, idx)=>{
+                item.textContent = weekdays.reverse()[idx]
+        })
+    }, []);
 
     return (
         <div className='Calendar'>
