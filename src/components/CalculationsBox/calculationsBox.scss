@@ -2,13 +2,12 @@
   margin: 25px 0 0;
 
   &__title {
-    font-size: 20px;
     letter-spacing: 0;
     color: #131426;
-    font-weight: 400;
     text-align: right;
     margin: 0 0 15px;
     padding: 0 30px 0 0;
+    font: normal normal normal 20px/25px Blender;
   }
 
   &__content {
@@ -28,13 +27,13 @@
       border-radius: 5px;
       letter-spacing: 0;
       color: #FFFFFF;
-      font-size: 17px;
       padding: 5px 10px;
       display: flex;
       align-items: center;
       column-gap: 5px;
       border: none;
       transition: 0.1s;
+      font: normal normal normal 13px/17px Blender;
 
       &:hover {
         background: #0063ad;
@@ -45,9 +44,8 @@
     &_title {
       letter-spacing: 0;
       color: #131426;
-      font-size: 20px;
       text-align: right;
-      font-weight: 400;
+      font: normal normal normal 20px/25px Blender;
     }
   }
 
@@ -59,11 +57,10 @@
     padding: 12px 30px 12px 25px;
 
     &_text {
-      font-size: 20px;
-      font-weight: 600;
       letter-spacing: 0;
       color: #131426;
       text-align: right;
+      font: normal normal bold 20px/25px Blender;
 
       &-margin {
         margin: 13px 0 0;
@@ -71,11 +68,10 @@
     }
 
     &_descr {
-      font-size: 18px;
-      font-weight: 500;
       letter-spacing: 0;
       color: #131426;
       text-align: right;
+      font: normal normal normal 16px/20px Blender;
 
       &-flex {
         display: flex;

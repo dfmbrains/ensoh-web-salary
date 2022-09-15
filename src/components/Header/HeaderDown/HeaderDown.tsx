@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import "./headerDown.scss";
 import Printer from "../../../assets/icons/printer.svg";
 import AddDate from "../../../assets/icons/addDate.svg";
@@ -13,8 +13,8 @@ const HeaderDown = () => {
     return (
         <div className="header__down">
             <div className="header__down_actualCard">
-                <p>חישוב אחרון</p>
-                <p>11.12.2022</p>
+                <p className={"header__down_actualCard-subtitle"}>חישוב אחרון</p>
+                <p className={"header__down_actualCard-date"}>11.12.2022</p>
             </div>
             <div className="header__down_right">
                 <div className="header__down_first">
@@ -67,9 +67,11 @@ const HeaderDown = () => {
                         </div>
                         <span className="subInfo">דיווח נוכחות ל: ישראל ישראלי</span>
                     </div>
-                    <img
-                        src="https://avatars.mds.yandex.net/i?id=0329885c211061b252dbdf4c8c3a91be-4478522-images-thumbs&n=13"
-                        alt=""/>
+                    <div className={"header__down_profile-img"}>
+                        <div>
+                            <i className="ri-user-fill"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
