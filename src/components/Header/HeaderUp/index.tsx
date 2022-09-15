@@ -19,7 +19,7 @@ const Index = () => {
                     <span>ניהול עובדים</span>
                     <img src={Human}/>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="/home">
                     <span>ראשי</span>
                     <img src={Human}/>
                 </NavLink>

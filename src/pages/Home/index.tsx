@@ -1,8 +1,9 @@
 import React from 'react';
 import './home.scss';
 import Calculations from "./Calculations";
-import Calendar from "./Calendar";
 import HeaderDown from "../../components/Header/HeaderDown/HeaderDown";
+import CalendApp from "../../components/Calendar/Calendar";
+
 
 const Home = () => {
     return (
@@ -12,7 +13,7 @@ const Home = () => {
                 <div className="container">
                     <div className="home__row">
                         <Calculations/>
-                        <Calendar/>
+                        <CalendApp/>
                     </div>
                 </div>
             </section>
