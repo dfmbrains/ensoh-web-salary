@@ -5,7 +5,12 @@ import CalendarIcon from '../../../assets/img/calendarIcon.svg';
 const Calculations = () => {
     return (
         <div className={"calculations homeBox"}>
-            <h2 className="calculations__title">21 אוקטובר</h2>
+            <h2 className="calculations__title">
+                21 אוקטובר
+                <span>
+                    <img src={CalendarIcon} alt="CalendarIcon"/>
+                </span>
+            </h2>
         </div>
     );
 };
