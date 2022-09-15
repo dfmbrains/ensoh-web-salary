@@ -2,7 +2,6 @@
   margin: 25px 0 0;
 
   &__title {
-    font-size: 20px;
     letter-spacing: 0;
     color: #131426;
     text-align: right;
@@ -28,7 +27,6 @@
       border-radius: 5px;
       letter-spacing: 0;
       color: #FFFFFF;
-      font-size: 17px;
       padding: 5px 10px;
       display: flex;
       align-items: center;
@@ -46,7 +44,6 @@
     &_title {
       letter-spacing: 0;
       color: #131426;
-      font-size: 20px;
       text-align: right;
       font: normal normal normal 20px/25px Blender;
     }
@@ -60,7 +57,6 @@
     padding: 12px 30px 12px 25px;
 
     &_text {
-      font-size: 20px;
       letter-spacing: 0;
       color: #131426;
       text-align: right;
@@ -72,7 +68,6 @@
     }
 
     &_descr {
-      font-size: 18px;
       letter-spacing: 0;
       color: #131426;
       text-align: right;
