@@ -80,9 +80,12 @@
   &_benefits {
     display: flex;
     align-items: flex-start;
-    column-gap: 30px;
     padding: 0 40px;
     border-right: 0.75px solid #BFCDE2;
+
+    .title {
+      color: #FFFFFF !important;
+    }
 
     img {
       width: 44px;
@@ -118,11 +121,17 @@
       margin-bottom: 5px;
     }
   }
+  &_dates .header__down_iconCard:nth-child(2){
+    .title{
+      color: #686868 !important;
+    }
+  }
 
   &_iconCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     .title {
       text-align: left;
@@ -132,6 +141,26 @@
       letter-spacing: 0;
     }
   }
+
+  &_benefits .header__down_iconCard:nth-child(3) {
+    .title {
+      color: #686868 !important;
+    }
+  }
+
+  &_benefits {
+    .lines {
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 25px;
+        height: 1px;
+        background: #FFFFFF;
+      }
+    }
+  }
+
 
   &_actualCard {
     background: #E9EFF5;

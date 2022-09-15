@@ -42,17 +42,22 @@ const HeaderDown = () => {
                 </div>
                 <div className="header__down_benefits">
                     <div className="header__down_iconCard">
-                        <img src={Verify} alt="printer"/>
+                            <img src={Verify} alt="verify"/>
                         <span className="title">גיליון</span>
                         <span className="title">אושר</span>
                     </div>
                     <div className="header__down_iconCard">
-                        <img src={Time} alt="printer"/>
+
+                        <div className="lines">
+                            <span></span>
+                            <img src={Time} alt="time"/>
+                            <span></span>
+                        </div>
                         <span className="title">גיליון</span>
                         <span className="title">בהמתנה</span>
                     </div>
                     <div className="header__down_iconCard">
-                        <img src={Charge} alt="printer"/>
+                        <img src={Charge} alt="charge"/>
                         <span className="title">גיליון</span>
                         <span className="title">פעיל</span>
                     </div>

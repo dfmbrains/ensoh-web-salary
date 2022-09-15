@@ -7,15 +7,10 @@ const CalendApp = () => {
 
     const [date, setDate] = useState(new Date());
 
-    const weekdays = ['ש','ו','ה','ד','ג','ב','א'];
     const workDays = [3, 1, 8, 7, 6, 5, 4, 15, 14, 13, 12, 19, 18, 25];
     const errorDays = [11, 21, 20];
 
     useEffect(()=>{
-        document.querySelector('.react-calendar__month-view__weekdays')
-            .querySelectorAll('abbr').forEach((item , idx)=>{
-                item.textContent = weekdays.reverse()[idx]
-        })
         document.querySelectorAll('.react-calendar__tile')
             .forEach((item, idx)=>{
                 if (workDays.includes(+item.textContent) && !item.className.includes('active')){
@@ -25,6 +20,34 @@ const CalendApp = () => {
                     item.classList.add('errorDays')
                 }
             })
+    }, []);
+
+    useEffect(()=>{
+        document.querySelector('.react-calendar__month-view__weekdays')
+            .querySelectorAll('abbr').forEach((item , idx)=>{
+            if (idx === 0){
+                item.textContent = 'א'
+            }
+            if (idx === 1){
+                item.textContent = 'ב'
+            }
+            if (idx === 2){
+                item.textContent = 'ג'
+            }
+            if (idx === 3){
+                item.textContent = 'ד'
+            }
+            if (idx === 4){
+                item.textContent = 'ה'
+            }
+            if (idx === 5){
+                item.textContent = 'ו'
+            }
+            if (idx === 6) {
+                item.textContent = 'ש'
+            }
+
+        })
     }, []);
 
     return (
