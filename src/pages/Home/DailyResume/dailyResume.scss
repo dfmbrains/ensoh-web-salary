@@ -14,6 +14,7 @@
       letter-spacing: 0;
       color: #131426;
       line-height: 100%;
+      font: normal normal normal 18px/23px Blender;
     }
 
     &_box {
@@ -35,7 +36,7 @@
         font-size: 18px;
         letter-spacing: 0;
         color: #131426;
-        font-weight: 500;
+        font: normal normal normal 18px/23px Blender;
       }
     }
   }
@@ -48,9 +49,9 @@
       line-height: 30px;
       letter-spacing: 0;
       color: #131426;
-      font-weight: 600;
       text-align: right;
       padding: 0 5px 0 0;
+      font: normal normal normal 27px/35px Blender;
     }
 
     &_box {
@@ -73,6 +74,7 @@
           align-items: center;
           column-gap: 10px;
           text-align: right;
+          font: normal normal normal 18px/23px Blender;
 
           i {
             color: #EF4030;
@@ -88,6 +90,7 @@
           margin: 10px 0 0;
           text-align: right;
           padding: 0 25px 0 0;
+          font: normal normal normal 16px/20px Blender;
         }
       }
 
@@ -101,10 +104,10 @@
         &-text {
           font-size: 18px;
           line-height: 19px;
-          font-weight: 600;
           text-align: right;
           letter-spacing: 0;
           color: #131426;
+          font: normal normal bold 18px/23px Blender;
         }
 
         &-descr {
@@ -113,6 +116,7 @@
           letter-spacing: 0;
           color: #131426;
           text-align: right;
+          font: normal normal normal 17px/22px Blender;
 
           &-small {
             font-size: 13px;
@@ -120,6 +124,7 @@
             letter-spacing: 0;
             color: #131426;
             text-align: right;
+            font: normal normal normal 13px/17px Blender;
           }
         }
 
@@ -147,6 +152,7 @@
         letter-spacing: 0;
         color: #000000;
         text-align: right;
+        font: normal normal normal 13px/17px Blender;
       }
     }
 
@@ -160,8 +166,8 @@
         letter-spacing: 0;
         color: #000000;
         text-align: right;
-        font-weight: bold;
         white-space: nowrap;
+        font: normal normal bold 18px/23px Blender;
       }
     }
   }
