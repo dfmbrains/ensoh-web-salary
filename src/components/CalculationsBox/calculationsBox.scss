@@ -15,6 +15,7 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    height: 110px;
   }
 
   &__edit {
@@ -42,10 +43,51 @@
     }
 
     &_title {
+      margin: 5px 0 0;
       letter-spacing: 0;
       color: #131426;
       text-align: right;
       font: normal normal normal 20px/25px Blender;
+
+      span {
+        letter-spacing: 0;
+        color: #131426;
+        text-align: right;
+        font: normal normal normal 20px/25px Blender;
+      }
+    }
+
+    &_input {
+      margin: 5px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      column-gap: 10px;
+
+      button {
+        background: #FFFFFF;
+        border-radius: 50px;
+        border: none;
+        position: relative;
+        width: 25px;
+        height: 25px;
+
+        i {
+          font-size: 22px;
+          color: #e1e7ec;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+
+      p {
+        font: normal normal normal 16px/20px Blender;
+        letter-spacing: 0;
+        color: #0072BC;
+        text-align: right;
+      }
     }
   }
 
@@ -61,6 +103,7 @@
       color: #131426;
       text-align: right;
       font: normal normal bold 20px/25px Blender;
+      line-height: 25px;
 
       &-margin {
         margin: 13px 0 0;
@@ -69,9 +112,15 @@
 
     &_descr {
       letter-spacing: 0;
+      line-height: 25px;
       color: #131426;
       text-align: right;
       font: normal normal normal 16px/20px Blender;
+
+      i {
+        color: #F58420;
+        font-size: 20px;
+      }
 
       &-flex {
         display: flex;
@@ -82,6 +131,10 @@
 
       &-margin {
         margin: 2px 0 0;
+
+        &-big {
+          margin: 18px 0 0;
+        }
       }
     }
   }

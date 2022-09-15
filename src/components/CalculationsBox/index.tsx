@@ -1,13 +1,21 @@
-import React, {FC} from 'react';
+import React, {FC, useRef} from 'react';
 import './calculationsBox.scss';
 import EditIcon from '../../assets/icons/edit.svg';
 import ClockIcon from '../../assets/icons/clock.svg';
 
 interface PropsInterface {
-    priority: string
+    priority: string,
+    status: boolean,
 }
 
-const CalculationsBox: FC<PropsInterface> = ({priority}) => {
+const CalculationsBox: FC<PropsInterface> = ({priority, status}) => {
+
+    const fileRef: any = useRef();
+
+    const chooseFileHandler = () => {
+        fileRef.current.click()
+    };
+
     return (
         <div className={"calculationsBox"}>
             <h3 className="calculationsBox__title">סוג דיווח: עבודה</h3>
@@ -19,7 +27,18 @@ const CalculationsBox: FC<PropsInterface> = ({priority}) => {
                         <img src={EditIcon} alt="EditIcon"/>
                     </span>
                     </button>
-                    <h3 className="calculationsBox__edit_title">נחשב</h3>
+                    <h3 className="calculationsBox__edit_title">
+                        {status && <span>8.24 :</span>} נחשב
+                    </h3>
+                    {status
+                    && <div className={"calculationsBox__edit_input"}>
+                        <p>אישור מחלה</p>
+                        <button onClick={chooseFileHandler}>
+                            <i className="ri-attachment-2"/>
+                        </button>
+                        <input ref={fileRef} hidden={true} type="file"/>
+                    </div>
+                    }
                 </div>
                 <div className="calculationsBox__info">
                     <div>
@@ -33,12 +52,28 @@ const CalculationsBox: FC<PropsInterface> = ({priority}) => {
                         <p className={"calculationsBox__info_descr"}>אנטוקולסקי</p>
                     </div>
                     <div>
-                        <p className={"calculationsBox__info_descr calculationsBox__info_descr-flex"}>
-                            8:30
-                            <span>
-                            <img src={ClockIcon} alt="ClockIcon"/>
-                        </span>
-                        </p>
+                        {status
+                            ? <div>
+                                <p className={"calculationsBox__info_descr calculationsBox__info_descr-flex"}>
+                                    14:00
+                                    <span>
+                                        <i className="ri-user-line"/>
+                                    </span>
+                                </p>
+                                <p className={"calculationsBox__info_descr calculationsBox__info_descr-flex calculationsBox__info_descr-margin-big"}>
+                                    18:00
+                                    <span>
+                                        <i className="ri-user-line"/>
+                                    </span>
+                                </p>
+                            </div>
+                            : <p className={"calculationsBox__info_descr calculationsBox__info_descr-flex"}>
+                                8:30
+                                <span>
+                                    <img src={ClockIcon} alt="ClockIcon"/>
+                                </span>
+                            </p>
+                        }
                     </div>
                     <div>
                         <p className={"calculationsBox__info_text"}>כניסה</p>
