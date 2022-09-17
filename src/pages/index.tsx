@@ -5,14 +5,14 @@ import Header from "../components/Header";
 
 const Routing = () => {
     return (
-        <>
+        <div className="scrollbar">
             <Header/>
             <main>
                 <Routes>
                     <Route path={"/home"} element={<Home/>}/>
                 </Routes>
             </main>
-        </>
+        </div>
     );
 };
 
