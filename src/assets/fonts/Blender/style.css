@@ -1,4 +1,31 @@
 @font-face {
     font-family: "Blender";
-    src: url("./Blender.ttf");
+    src: url("./Blender-Black.ttf");
+    src: local('Blender-Black'), local('Blender-Black'),
+    url('._Blender-Black.ttf') format('ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Blender";
+    src: url("./Blender-Bold.ttf");
+    src: local('Blender-Bold'), local('Blender-Bold'),
+    url('._Blender-Bold.ttf') format('ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Blender";
+    src: url("./Blender-Regular.ttf");
+    src: local('Blender-Regular'), local('Blender-Regular'),
+    url('._Blender-Regular.ttf') format('ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Blender";
+    src: url("./Blender-Light.ttf");
+    src: local('Blender-Light'), local('Blender-Light'),
+    url('._Blender-Light.ttf') format('ttf');
+    font-weight: 300;
 }

@@ -1,9 +1,17 @@
 .header__up {
   background: #0072BC;
-  padding: 7px 11px;
+  padding: 7px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 97.4%;
+    margin: unset;
+    padding: 0 10px 0 0;
+  }
 
   &_links {
     display: flex;

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {useState} from 'react';
 import Calendar from "react-calendar";
 import "./Calendar.scss"
@@ -6,54 +6,52 @@ import "./Calendar.scss"
 const CalendApp = () => {
 
     const [date, setDate] = useState(new Date());
+    const calendarRef = useRef(null);
 
-    const workDays = [3, 1, 8, 7, 6, 5, 4, 15, 14, 13, 12, 19, 18, 25];
+    const workDays = [8, 5, 4];
     const errorDays = [11, 21, 20];
 
-    useEffect(()=>{
-        document.querySelectorAll('.react-calendar__tile')
-            .forEach((item, idx)=>{
-                if (workDays.includes(+item.textContent) && !item.className.includes('active')){
-                    item.classList.add('workDay')
-                }
-                else if (errorDays.includes(+item.textContent) && !item.className.includes('active')){
-                    item.classList.add('errorDays')
-                }
-            })
-    }, []);
 
-    useEffect(()=>{
-        document.querySelector('.react-calendar__month-view__weekdays')
-            .querySelectorAll('abbr').forEach((item , idx)=>{
-            if (idx === 0){
-                item.textContent = 'א'
-            }
-            if (idx === 1){
-                item.textContent = 'ב'
-            }
-            if (idx === 2){
-                item.textContent = 'ג'
-            }
-            if (idx === 3){
-                item.textContent = 'ד'
-            }
-            if (idx === 4){
-                item.textContent = 'ה'
-            }
-            if (idx === 5){
-                item.textContent = 'ו'
-            }
-            if (idx === 6) {
-                item.textContent = 'ש'
-            }
 
-        })
-    }, []);
+    const formatDay = (locale, date) => {
+        const day = locale.toString().slice(0, 3)
+        if (day === 'Sun') {
+            return 'א'
+        } else if (day === "Mon") {
+            return 'ב'
+        } else if (day === "Tue") {
+            return 'ג'
+        } else if (day === "Wed") {
+            return 'ד'
+        } else if (day === 'Thu') {
+            return 'ה'
+        } else if (day === "Fri") {
+            return 'ו'
+        } else {
+            return 'ש'
+        }
+    }
+
+    const classNamesTile = (obj) => {
+        let nowDate = new Date().setHours(0,0, 0,0)
+        if (obj.date.toJSON() === new Date(nowDate).toJSON()){
+            console.log(obj.date, new Date(nowDate))
+            return 'nowDate'
+        }
+        else if (workDays.includes(obj.date.getDate())){
+            return 'workDay'
+        }
+        else if (errorDays.includes(obj.date.getDate())){
+            return 'errorDays'
+        }
+    };
 
     return (
         <div className='Calendar'>
             <div className='calendar-container'>
-                <Calendar defaultValue={new Date()} locale="iw-IW" calendarType='Hebrew' onChange={setDate} value={date}/>
+                <Calendar tileClassName={(obj) => classNamesTile(obj)}
+                          formatShortWeekday={(locale, date) => formatDay(date, 'dd')} defaultValue={new Date()}
+                          locale="iw-IW" calendarType='Hebrew' onChange={setDate} value={date}/>
             </div>
             <div className="tips">
                 <div className="tip">

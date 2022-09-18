@@ -9,24 +9,26 @@ import "./headerUp.scss"
 const Index = () => {
     return (
         <div className="header__up">
-            <img src={Logo} alt=""/>
-            <div className="header__up_links">
-                <NavLink to="/1">
-                    <span> משאבי אנוש</span>
-                    <img src={Group}/>
-                </NavLink>
-                <NavLink to="/2">
-                    <span>ניהול עובדים</span>
-                    <img src={Human}/>
-                </NavLink>
-                <NavLink to="/home">
-                    <span>ראשי</span>
-                    <img src={Human}/>
-                </NavLink>
-            </div>
-            <div className="header__up_right">
-                <h2>גיליון נוכחות עירוני</h2>
-                <img src={Header_logo} alt=""/>
+            <div className="container">
+                <img src={Logo} alt=""/>
+                <div className="header__up_links">
+                    <NavLink to="/1">
+                        <span> משאבי אנוש</span>
+                        <img src={Group}/>
+                    </NavLink>
+                    <NavLink to="/2">
+                        <span>ניהול עובדים</span>
+                        <img src={Human}/>
+                    </NavLink>
+                    <NavLink to="/home">
+                        <span>ראשי</span>
+                        <img src={Human}/>
+                    </NavLink>
+                </div>
+                <div className="header__up_right">
+                    <h2>גיליון נוכחות עירוני</h2>
+                    <img src={Header_logo} alt=""/>
+                </div>
             </div>
         </div>
     );

@@ -11,8 +11,8 @@
   text-transform: uppercase;
 }
 .react-calendar__tile--active{
-  background: #0072BC !important;
-  color: #FFFFFF !important;
+  transition: 0.3s;
+  border: 2px solid #0072BC !important;
 }
 
 .react-calendar__navigation__label{
@@ -56,6 +56,11 @@
   color: #FFFFFF !important;
   transition: 0.3s;
   background: #d7d9da !important;
+}
+
+.nowDate{
+  background: #0072BC !important;
+  color: #FFFFFF !important;
 }
 
 .react-calendar__tile{
