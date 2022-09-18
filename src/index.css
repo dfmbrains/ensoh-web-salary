@@ -7,8 +7,17 @@
     font-family: 'Blender', sans-serif;
 }
 
+
+body::-webkit-scrollbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 body {
     background: #F3F3F3;
+    position: relative;
+    overflow: auto;
 }
 
 button {
