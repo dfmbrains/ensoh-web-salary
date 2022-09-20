@@ -9,21 +9,13 @@
 
 body {
     background: #F3F3F3;
-    overflow-y: hidden;
+
 }
 
 body::-webkit-scrollbar{
     height: 0;
 }
 
-#root{
-    overflow-y: scroll;
-    height: 100vh;
-    direction: rtl;
-}
-.scrollbar{
-    direction: ltr;
-}
 
 button {
     cursor: pointer;

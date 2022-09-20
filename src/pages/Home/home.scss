@@ -1,7 +1,11 @@
 .home {
   padding: 50px 0;
+  overflow-x: scroll;
+  max-height: calc(100vh - (59px + 126px));
+  direction: rtl;
 
   &__row {
+    direction: ltr;
     display: flex;
     justify-content: space-between;
   }
